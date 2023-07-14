@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_20sdp"
+    tools:context=".activities.SignInActivity"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_24ssp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in_to_continue"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_16ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/primary"
+            />
+
+        <EditText
+            android:id="@+id/singInEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/primary"
+            android:paddingStart="@dimen/_15ssp"
+            android:paddingEnd="@dimen/_15ssp"
+
+            />
+
+        <EditText
+            android:id="@+id/signInPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/password"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/primary"
+            android:paddingStart="@dimen/_15ssp"
+            android:paddingEnd="@dimen/_15ssp"
+            android:inputType="textPassword"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:animateLayoutChanges="true"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signInButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:text="@string/sign_in"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_8sdp"
+                />
+
+            <ProgressBar
+                android:id="@+id/signInProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+
+        </FrameLayout>
+        
+
+
+        <TextView
+            android:id="@+id/createNewAccountText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/create_a_new_account"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
